@@ -1,3 +1,20 @@
+# -----------------------------------------------------------------------------
+# Name:        pluto1
+# Purpose:     Recursive Descent Parser Demo
+#
+# Author:  Rula Khayrallah
+#
+# -----------------------------------------------------------------------------
+# """
+# Recursive descent parser to recognize & evaluate simple arithmetic expressions
+
+# Supports the following grammar:
+#   <command> ::= <arith_expr>
+#  <arith_expr> ::= <term> {ADD_OP <term>}
+# <term> ::= <factor> {MULT_OP <factor>}
+# <factor>::= LPAREN <arith_expr> RPAREN | FLOAT | INT
+# """
+
 
 import lex
 from operator import add, sub, mul, truediv, lt, gt, eq, ne, le, ge
